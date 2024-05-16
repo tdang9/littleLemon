@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <footer>
-            <a href="www.littlelemon.com"> Visit Us </a>
+            <p>&copy; 2024 Little Lemon. All rights reserved.</p>
         </footer>
     )
 }

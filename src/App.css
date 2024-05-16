@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -20,8 +23,12 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Markazi Text', serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
 header,
@@ -60,42 +67,153 @@ footer {
 }
 
 nav {
+  font-family: 'Karla', 'sans serif';
   background-color: #eff6f3;
-  padding: 1rem;
-}
-
-.nav-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 .logo {
-  height: 80px;
-  margin-right: 1rem;
+  height: 60px;
+  margin-right: 80px;
 }
 
-nav ul {
+ul {
   list-style-type: none;
-  display: flex;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+ul li {
   display: inline;
-  margin-left: 1rem;
+  margin-right: 20px;
 }
 
-nav ul li:first-child {
-  margin-left: 0;
-}
-
-nav ul li a {
-  color: #495E57;
+ul li a {
   text-decoration: none;
+  color: #495E57;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+  font-weight: bold;
+}
+
+.call-to-action {
+  background: #495E57;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.call-to-action h1 {
+  font-size: 2.5em;
+  color: #f4CE14;
+  margin-bottom: 10px;
+}
+
+.call-to-action p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.call-to-action button {
+  background: #f4CE14;
+  color: #0f0f0f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.specials {
+  background: #fff;
+  padding: 20px;
+}
+
+.specials h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.specials ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.specials ul li {
+  background: #eee;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 0 21%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.specials ul li h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.specials ul li p {
+  margin: 5px 0;
+}
+
+.customers-say {
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+.customers-say h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customers-say ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.customers-say ul li {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 0 21%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.customers-say ul li img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.customers-say ul li p {
+  margin: 5px 0;
+}
+
+.chicago {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.chicago h2 {
+  margin-bottom: 20px;
+}
+
+.chicago p {
+  font-size: 1.1em;
+  line-height: 1.5;
 }
