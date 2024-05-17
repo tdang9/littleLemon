@@ -1,21 +1,22 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Homepage from './components/Homepage';
 import BookingPage from './components/BookingPage';
-import './App.css';
+import Main from './components/Main';
+import About from './components/About';
 
 function App() {
   return (
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/bookings" element={<BookingPage />} />
-      </Routes>
+      <div>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/bookings" element={<BookingPage />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

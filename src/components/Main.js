@@ -1,23 +1,26 @@
-import React, { useState } from 'react';
-import BookingPage from '../components/BookingPage';
+import React, { useState, useReducer } from 'react';
+import Hero from './Hero';
+import Specials from './Specials';
+import Footer from './Footer';
 
-const Main=() => {
-    // State variables for booking information
-    const [availableTimes, setAvailableTimes]=useState([
-        '17:00',
-        '18:00',
-        '19:00',
-        '20:00',
-        '21:00',
-        '22:00'
-    ]);
+function Main() {
+    const initializeTimes=() => {
+        return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+    };
+
+    const updateTimes=(state, selectedDate) => {
+        return initializeTimes();
+    };
+
+    const [availableTimes, dispatch]=useReducer(updateTimes, null, initializeTimes);
 
     return (
-        <div>
-            {/* Other components and content can go here */}
-            <BookingPage availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
-        </div>
+        <main>
+            <Hero />
+            <Specials />
+            <Footer />
+        </main>
     );
-};
+}
 
 export default Main;

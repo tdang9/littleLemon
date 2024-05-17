@@ -1,14 +1,13 @@
 import React from 'react';
-import BookingForm from '../components/BookingForm'; // Assuming you have a BookingForm component
+import BookingForm from './BookingForm'; // Import BookingForm component
 
-const BookingPage=({ availableTimes, setAvailableTimes }) => {
+function BookingPage({ availableTimes, dispatch }) {
     return (
         <div>
-            <h1>Book a Table</h1>
-            <p>Reserve your table at Little Lemon today!</p>
-            <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
+            <h2>Book a Table</h2>
+            <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
         </div>
     );
-};
+}
 
 export default BookingPage;

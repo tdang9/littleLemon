@@ -1,0 +1,31 @@
+.specials-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.special-item {
+    background: #eee;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 0 21%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.image-container {
+    overflow: hidden;
+    /* Crop the image */
+    height: 200px;
+    /* Set the desired height */
+}
+
+.image-container img {
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
